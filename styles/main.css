@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Jost", sans-serif;
+    background-color: #F7F0FF;
+}
+
+.description {
+    color: #0016DA;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36.13px;
+    letter-spacing: 0.07em;
+    text-align: left;
+}
+
+.caption {
+    margin-top: 84px;
+    color: #000;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 50.58px;
+    letter-spacing: 0.07em;
+    text-align: center;
+}
+
+
+/* Navigation */
+
+.navigation {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    padding: 12px 45px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0px 5px 10px 0px rgb(190, 190, 190);
+    
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28.9px;
+    letter-spacing: 0.07em;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+
+
+.nav_links {
+    max-width: 967px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 19px;
+}
+
+.nav_links a {
+    position: relative;
+    color: #AD6FFE;
+    transition:  0.2s;
+}
+
+.nav_links a::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 5px;
+    content: '';
+    background-color: #AD6FFE;
+    transition: 0.4s;
+}
+
+.nav_links a:hover:after {
+    width: 100%;
+}
+
+
+
+
+/* Nav button */
+
+.nav_btn {
+    width: 344px;
+    height: 41px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+
+    background-color: #AD6FFE;
+    border-radius: 30px;
+    border: 1px rgb(214, 140, 229) solid;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav_btn:hover {
+    background-color: #7423dd;
+}
+
+
+
+/* Header */
+
+
+
+.container {
+    max-width: 1228px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+    align-items: center;
+    column-gap: 72px;
+}
+
+.desc__header {
+    width: 598px;
+    margin-top: 49px;
+}
+
+.header__title {
+    width: 494px;
+    margin: 0 auto;
+    color: #0057A8;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 57.8px;
+    letter-spacing: 0.07em;
+    text-align: center;
+}
+
+.header__img__doctor {
+    border-radius: 15px;
+}
+
+
+
+/* Main */
+
+
+.main {
+    margin-top: 28px;
+}
+
+.content__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content__row .description {
+    width: 950px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36.13px;
+    letter-spacing: 0.07em;
+    text-align: left;
+    color: #0016DA;
+}
+
+.dentist__img {
+    border-radius: 15px;
+}
+
+.bold__font {
+    font-weight: 700;
+}
+
+.light__font {
+    color: #46C2C6;
+}
+
+.desc__main__1 {
+    margin-top: 13px;
+}
+
+.list__features {
+    margin-top: 32px;
+}
+
+.feature { 
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    color: #0016DA;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 36.13px;
+    letter-spacing: 0.07em;
+    text-align: left;
+}
+
+
+.feature::before {
+    content: '';
+    background-color: #0016DA;
+    width: 9px;
+    height: 9px;
+    border-radius: 5px;
+}
+
+/* Footer */
+
+
+.footer {
+    margin-top: 150px;
+    padding: 50px 0;
+    border-top: 2px solid #ad6ffe50;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    font-weight: 400;
+    line-height: 36.13px;
+    letter-spacing: 0.07em;
+    text-align: center;
+}
+
+.footer__logo {
+    width: 580px;
+}
+
+.title__info {
+    margin-top: 79px;
+    font-size: 40px;
+}
+
+.address {
+    margin-top: 27px;
+    font-size: 35px;
+}
+
+.phone {
+    margin-top: 85px;
+    color: #AD6FFE;
+    font-size: 20px;
+}
+
+.contact__link {
+    margin-top: 91px;
+    display: flex;
+    column-gap: 23px;
+}
+
+.contact__link a {
+    display: block;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.contact__link a:hover {
+    background-color: #ad6ffe8d;
+}
+
+    
+
+
+
+
+@media (width < 1540px) {
+    .navigation {
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 28.9px;
+        letter-spacing: 0.07em;
+        text-align: center;
+    }
+}
+
+@media (width < 1240px) {
+    .navigation {
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 28.9px;
+        letter-spacing: 0.07em;
+        text-align: center;
+    }
+}
+
